@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Simba apprend à devenir propre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8ff;
+        }
+        .container {
+            padding: 15px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .text-box {
+            margin-top: 15px;
+            font-size: 16px;
+            background: #fff;
+            padding: 12px;
+            border-radius: 10px;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: #4da6ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .button:hover {
+            background-color: #3399ff;
+        }
+        audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <h1>Simba apprend à devenir propre</h1>
+        <img src='RandomFileName_6ab5c42a-c49e-45aa-b7ba-68e8c8e31bc7.png' alt='Simba et le pot magique'>
+        <div class='text-box'>
+            <p>Ce matin, Simba s’est réveillé avec une idée très spéciale. Il voulait devenir un vrai prince… sans couche !<br>
+            Son doudou lui a dit : "Tu es prêt, Simba ! Le pot magique t’attend !"</p>
+        </div>
+        <button class='button' onclick='playEffect()'>J’aide Simba</button>
+        <audio id='narration' controls>
+            <source src='narration_simba.mp3' type='audio/mpeg'>
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+        <audio id='effect'>
+            <source src='bravo_simba.mp3' type='audio/mpeg'>
+        </audio>
+    </div>
+    <script>
+        function playEffect() {
+            document.getElementById('effect').play();
+            alert('Bravo Simba !');
+        }
+    </script>
+</body>
+</html>
